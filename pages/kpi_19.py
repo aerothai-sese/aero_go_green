@@ -33,8 +33,8 @@ with col3 :
 #excld_box_time = st.slider("Select analysis radius (NM)",min_value=150,max_value=250,value=200,step=10)
 
 #df = pd.read_csv('../cat062_20240805_202408071426.csv')
-df = get_mongo_df()
-filtered_df = filter_df(df,select_airport,slt_rad )
-fig = final_plot(filtered_df)
-st.write("The analysis may take a few moments to load")
-st.plotly_chart(fig,use_container_width=True)
+#df = get_mongo_df()
+#filtered_df = filter_df(df,select_airport,slt_rad )
+#fig = final_plot(filtered_df)
+#st.write("The analysis may take a few moments to load")
+#st.plotly_chart(fig,use_container_width=True)
