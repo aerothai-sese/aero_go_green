@@ -8,6 +8,7 @@ from pymongo.server_api import ServerApi
 
 def get_mongo_df():
     uri = "mongodb+srv://art_sese_fi_2023:art_sese_fi_2023@cluster0.xpbbr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    client = MongoClient(uri)
     db = client['vfe']  # Replace with your database name
     collection = db['cat62_vfe']  # Replace with your collection name
     data = list(collection.find())  # Get all documents from the collection
